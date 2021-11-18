@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "./Image";
+import "./ImageFeed.css";
 
 const randomImage = () => {
     const randomSize = Math.floor(Math.random() * 200) + 400;
@@ -35,9 +36,10 @@ const ImageFeed = (props) => {
     const renderedImages = images.map(image => {
         return <Image source={image} changeImage={changeImage} />
     })
-    return <div>Image Feed
+    return <div className="ImageFeed">
+        <h2 className="ImageFeed__title">Image Feed</h2>
         <button onClick={handleClick}>Add New Image!</button>
-        {renderedImages}
+        <div className="ImageFeed__images"> {renderedImages}</div>
     </div>
 }
 

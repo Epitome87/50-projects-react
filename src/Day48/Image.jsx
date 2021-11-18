@@ -1,13 +1,15 @@
 import React from "react";
+import "./Image.css";
 
 const Image = ({source, changeImage}) => {
     const handleClick = (event) => {
         changeImage(source);
-        alert(source);
     }
 
     return (
-        <img src={source} alt="Random" onClick={handleClick}/>
+        <div className="Image">
+            <img src={source} alt="Random" onClick={handleClick}/>
+        </div>
     )
 }
 

@@ -1,0 +1,13 @@
+.ImageFeed {
+    min-height: 100vh;
+    background-color: #89f;
+    margin: 0 auto;
+}
+
+.ImageFeed__images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
